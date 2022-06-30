@@ -17,7 +17,9 @@ body    {
     margin: 0 auto;
 }
 
-
+main    {
+    height: calc(100vh - 84px);
+}
 
 /*top-right "view" buttons*/
 
@@ -57,7 +59,7 @@ body    {
 }
 
 /*cards*/
-.cards-container {
+#cards-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -65,7 +67,10 @@ body    {
 
 .card-frame {
     position: relative;
-
+    flex-basis: calc(100%/8);
+    width: fit-content;
+    height: fit-content;
+    margin: 5px;
 }
 
 .user-name {
@@ -77,4 +82,14 @@ body    {
 .user-name::before  {
     font-family: "Font Awesome 5 Free";
     content: "\f130";
+}
+
+.card-img img   {
+    
+}
+
+/*toolbar*/
+.toolbar    {
+    background-color: grey;
+    height: 84px;
 }
