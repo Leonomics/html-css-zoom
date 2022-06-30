@@ -12,7 +12,10 @@ body    {
     background-color: black;
 }
 
-
+.container  {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 
 
@@ -56,15 +59,13 @@ body    {
 /*cards*/
 .cards-container {
     display: flex;
-    justify-content: row;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .card-frame {
     position: relative;
-    width: fit-content;
-    height: fit-content;
-    
+
 }
 
 .user-name {
