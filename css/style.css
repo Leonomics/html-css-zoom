@@ -77,11 +77,14 @@ main    {
     position: absolute;
     bottom: 5px;
     left: 0px;
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 5%;
+    border: 0px;
 }
 
 .user-name::before  {
     font-family: "Font Awesome 5 Free";
-    content: "\f130";
+    content: "\f007";
 }
 
 .card-img img   {
@@ -92,4 +95,58 @@ main    {
 .toolbar    {
     background-color: grey;
     height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
+
+/*audio-video*/
+.audio-video-options    {
+    display: flex;
+}
+
+.audio-video-options div   {
+    margin:10px;
+}
+
+.audio-video-options div::before   {
+    margin:10px;
+    font-family: "Font Awesome 5 Free";
+    content: "\f063";
+    position: relative;
+    top:-20px;
+    right: -50%;
+}
+
+/*main-options*/
+.main-options    {
+    display: flex;
+}
+
+.main-options div    {
+    margin: 10px;
+}
+
+.main-options div::before   {
+    margin:10px;
+    font-family: "Font Awesome 5 Free";
+    content: "\f063";
+    position: relative;
+    top:-20px;
+    right: -50%;
+}
+
+
+/*end-meeting*/
+.end-meeting    {
+    display: flex;
+    align-self: center;
+    color: red;
+    background-color: lightgrey;
+    height: inherit;
+}
+
+.end-meeting div   {
+    margin: 10px;
+}
+
