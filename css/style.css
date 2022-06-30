@@ -7,3 +7,48 @@
 img {
     max-width: 100%;
 }
+
+body    {
+    background-color: black;
+}
+
+.container  {
+    width: 100vw;
+}
+
+/*top-right "view" buttons*/
+
+#view-buttons   {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2px;
+}
+
+#view-buttons-container  {
+    display: flex;
+    margin-right: 0px;
+}
+
+.speaker-view button    {
+    background-color: grey;
+    color: white;
+    width: fit-content;
+    padding: 2px;
+}
+
+.cross  {
+    background-color: grey;
+    color: white;
+    width: fit-content;
+    padding: 2px;
+}
+
+.cross::after   {
+    font-family: "Font Awesome 5 Free";
+    content: "\f063";
+}
+
+.speaker-view button::before    {
+    font-family: "Font Awesome 5 Free";
+    content: "\f063";
+}
