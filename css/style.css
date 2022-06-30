@@ -12,9 +12,9 @@ body    {
     background-color: black;
 }
 
-.container  {
-    width: 100vw;
-}
+
+
+
 
 /*top-right "view" buttons*/
 
@@ -51,4 +51,29 @@ body    {
 .speaker-view button::before    {
     font-family: "Font Awesome 5 Free";
     content: "\f063";
+}
+
+/*cards*/
+.cards-container {
+    display: flex;
+    justify-content: row;
+    flex-wrap: wrap;
+}
+
+.card-frame {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    
+}
+
+.user-name {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+}
+
+.user-name::before  {
+    font-family: "Font Awesome 5 Free";
+    content: "\f130";
 }
